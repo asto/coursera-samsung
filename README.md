@@ -15,7 +15,7 @@ run\_analysis.R does the following with the Samsung dataset available at http://
 * prepTable is a function that takes a data filename, an activity filename and a subject filename and puts them all together. It also removes columns that aren't mean() or std()
 * Labels are added from the activity\_labels.txt file
 * Both test and train data are combined to form the "testData" dataframe
-* The meansData data frame contains means by subject and activity. The first column "Labels" has the subject and activity name. Ex: 2-WALKING. The remaining columns are averages for that subject and activity
+* The meansData data frame contains means by subject and activity
 * testData is written to Output.txt and meansData is written to Means.txt. Both are tab seperated value lists
 
 

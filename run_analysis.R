@@ -31,14 +31,5 @@ testData <- testData[,c(68,67,1:66)]
 
 write.table(testData, "Output.txt", sep="\t", row.names=F)
 
-labels <- NULL
-means <- NULL
-for (subject in unique(testData$Subject)){
-  for (activity in activityLabels$Activity){
-    labels <- c(labels, paste(subject, activity, sep="-"))
-    means <- rbind(means, colMeans(testData[testData$Activity == activity & testData$Subject == subject,3:68]))
-  }
-}
-meansData <- data.frame(Labels=labels, means)
-
+meansData <- aggregate(testData[,3:68], list(testData$Subject, testData$Activity), mean)
 write.table(meansData, "Means.txt", sep="\t", row.names=F)
