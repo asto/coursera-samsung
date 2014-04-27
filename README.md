@@ -1,12 +1,12 @@
 ###Introduction
 
-run_analysis.R does the following with the Samsung dataset available at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones:
-	* Combines the "test" and "train" data
-	* Retains just std() and mean() columns and removes the rest
-	* Adds in the subject and activity info
-	* Adds headers
-	* Writes the cleaned info to a tab separated txt file called Output.txt
-	* Writes means by subject and activity to Means.txt
+run\_analysis.R does the following with the Samsung dataset available at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones:
+* Combines the "test" and "train" data
+* Retains just std() and mean() columns and removes the rest
+* Adds in the subject and activity info
+* Adds headers
+* Writes the cleaned info to a tab separated txt file called Output.txt
+* Writes means by subject and activity to Means.txt
 
 *Existing output files WILL BE OVER-WRITTEN WITHOUT WARNING*
 
