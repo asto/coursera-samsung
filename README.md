@@ -17,5 +17,3 @@ run\_analysis.R does the following with the Samsung dataset available at http://
 * Both test and train data are combined to form the "testData" dataframe
 * The meansData data frame contains means by subject and activity
 * testData is written to Output.txt and meansData is written to Means.txt. Both are tab seperated value lists
-
-
